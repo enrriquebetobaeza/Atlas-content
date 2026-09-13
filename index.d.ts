@@ -5,7 +5,6 @@
  * API specification
  * OpenAPI spec version: 0.1.0
  */
-
 export * from './businessProfile';
 export * from './businessProfileApprovalMode';
 export * from './businessProfileInput';
@@ -31,3 +30,4 @@ export * from './postQualityStatus';
 export * from './postStatus';
 export * from './postUpdateInput';
 export * from './postUpdateInputPlatform';
+//# sourceMappingURL=index.d.ts.map

@@ -1,0 +1,104 @@
+Continue building the existing Atlas Content application. Do NOT create a new project and do NOT replace the existing dashboard.
+
+Build the next core feature: a real Business Profile and Content Rules system.
+
+Business Profile
+
+Create a Business Profile page where a customer can enter and save:
+
+- Business name
+- Business type/category
+- Address
+- City/state
+- Phone number
+- Website
+- Business description
+- Services offered
+- Products offered
+- Business hours
+- Current promotions
+- Target customers
+- Preferred tone for social posts
+
+Use a clean mobile-first form.
+
+Include:
+
+- Save Changes
+- Cancel
+- Edit Profile
+
+The information must persist when the user leaves the page and comes back.
+
+Content Rules
+
+Create a separate Content Rules section.
+
+Allow the customer to enter:
+
+Always Mention
+Information the customer wants included regularly in generated content.
+
+Never Mention
+Information the system must never include.
+
+Also provide settings for:
+
+- Tone: Professional, Friendly, Casual, Educational, Humorous
+- Posting frequency: 10, 20, or 30 posts per month
+- Approval mode:
+  - Approval Required
+  - Pre-Publish Confirmation
+  - Full Auto
+
+Make Approval Required the default.
+
+Important content-safety behavior
+
+The application must use the customer's saved business information as the source of truth.
+
+The system must NOT invent:
+
+- Services the business does not offer
+- Products
+- Prices
+- Discounts
+- Promotions
+- Financing
+- Certifications
+- Guarantees
+- Locations
+- Contact information
+- Claims about the business
+
+If information is missing, the generator should avoid making up an answer.
+
+Connect it to the existing dashboard
+
+Add a Business Profile and Content Rules option to the existing navigation.
+
+The dashboard should eventually display the current business name and basic business information instead of relying entirely on hard-coded demo data.
+
+Replace hard-coded demo business information wherever practical, but do not break the existing dashboard.
+
+Data architecture
+
+Create proper persistent storage for:
+
+- User
+- Business
+- Business Profile
+- Content Rules
+- Posting Preferences
+
+Structure the code so this can later connect to a real database and multiple customer accounts.
+
+For this stage, prioritize getting the complete working interface and persistent data flow working.
+
+Do not add paid services or billing.
+
+Do not add social-media API connections yet.
+
+Do not remove existing features unless necessary.
+
+After completing the build, explain in plain English what you changed and identify anything that is still using mock/demo data.
